@@ -1,0 +1,82 @@
+body {
+    background-image: url("../img/Trees_1080.jpg");
+    background-color: black;
+    background-attachment: fixed;
+    background-position: 0px 0px;
+    background-repeat: repeat-x;
+    animation: animatedBackground 140s linear infinite;
+}
+
+#circle {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    background-color: rgba(156,107,62,0.3);
+    line-height: 1;
+
+    width: 40%;
+    height: 0;
+    padding-bottom: 40%;
+    -webkit-border-radius: 50%;
+       -moz-border-radius: 50%; 
+            border-radius: 50%;
+}
+
+h1 {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    width: 100%;
+    transform: translate(-50%, -50%);
+    font-size: 100px;
+    letter-spacing: 7px;
+    font-family: 'Amatic SC', Helvetica, sans-serif;
+    color: #cda880;
+    text-shadow: 2px 2px #000000;
+}
+
+a {
+    padding: 10px;
+    color: rgba(205,168,128,0.8);
+    text-decoration: none;
+}
+
+a:hover {
+    color: rgba(205,168,128,0.4);
+}
+
+.icons {
+    width: 100%;
+    margin-top: 60%;
+    font-size: 3em;
+}
+
+@keyframes animatedBackground {
+    from { background-position: 0 0; }
+    to { background-position: 100% 0; }
+}
+
+@media screen and (max-width: 1662px) {
+    #circle {
+        width: 50%;
+        padding-bottom: 50%;
+    }
+    .icons {
+        margin-top: 65%;
+    }
+}
+
+@media screen and (max-width: 1108px) {
+    #circle {
+        width: 80%;
+        padding-bottom: 80%;
+    }
+    h1{
+        letter-spacing: 2;
+    }
+    .icons {
+        margin-top: 66%;
+    }
+}
